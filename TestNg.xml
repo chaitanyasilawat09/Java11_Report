@@ -1,0 +1,28 @@
+<suite name="Tests Selected From UI" parallel="tests" thread-count="20">
+    <listeners>
+        <listener class-name="test.lieteners.TestReporterListeners"/>
+        <!--		<listener class-name="com.ceb.shl.test.Listener.AnnotationTransferToReRunTests"/>-->
+    </listeners>
+    <parameter name="EnvUrlCE" value="https://talentcentral-2a.eu.shl.zone/player"/>
+    <parameter name="EnvUrlCO" value="https://talentcentral-2a.eu.shl.zone/admin"/>
+    <parameter name="browser" value="Chrome"/>
+    <!--	<parameter name="browser" value="BrowserStack-Android"/>-->
+    <parameter name="videoFlag" value="false"/>
+    <parameter name="screenShotFlag" value="true"/>
+    <parameter name="fileRandomNumber" value="49003_1657108667887_Product_TalentCentral_Environment_QA2_Browser_Chrome"/>
+    <parameter name="product" value="TalentCentral"/>
+    <!--	<parameter name="product" value="Precise-Fit"/>-->
+    <!--	<parameter name="product" value="Integration"/>-->
+    <parameter name="emailID" value="chaitanya.silawat@shl.com"/>
+
+    <test name = "Generate Report test" >
+    <classes>
+        <class name = "test.GenerateReport">
+            <method name ="test12">
+            </method>
+            <method name ="test12">
+            </method>
+            </class>
+        </classes>
+    </test>
+</suite>
